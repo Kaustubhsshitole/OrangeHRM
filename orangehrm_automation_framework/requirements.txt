@@ -1,0 +1,9 @@
+selenium>=4.15.0
+pytest>=7.4.0
+pytest-xdist>=3.3.1
+pytest-html>=4.0.2
+allure-pytest>=2.13.2
+opencv-python>=4.8.0
+numpy>=1.24.0
+pyautogui>=0.9.54
+pillow>=10.0.0

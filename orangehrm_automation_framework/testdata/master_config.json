@@ -1,0 +1,70 @@
+{
+  "framework": {
+    "browser": "chrome",
+    "headless": false,
+    "timeout": 15,
+    "retry_count": 2,
+    "screenshot_on_success": true,
+    "screenshot_on_failure": true,
+    "record_video": true,
+    "parallel_workers": "auto",
+    "base_url": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+    "paths": {
+      "passed_screenshots": "screenshots/passed",
+      "failed_screenshots": "screenshots/failed",
+      "videos": "videos",
+      "logs": "logs",
+      "reports": "reports"
+    }
+  },
+  "test_data": {
+    "login": {
+      "valid_username": "Admin",
+      "valid_password": "admin123",
+      "invalid_username": "InvalidUser",
+      "invalid_password": "wrongpassword"
+    },
+    "employee": {
+      "first_name": "Alexander",
+      "middle_name": "James",
+      "last_name": "Enterprise",
+      "employee_id": "99827",
+      "username": "alex.enterprise",
+      "password": "Password123!",
+      "search_name": "Alexander James Enterprise"
+    },
+    "leave": {
+      "leave_type": "US - Personal",
+      "start_date": "2026-07-10",
+      "end_date": "2026-07-12",
+      "comment": "Enterprise-level automated leave request."
+    },
+    "recruitment": {
+      "candidate_first_name": "Sophia",
+      "candidate_last_name": "Automation",
+      "candidate_email": "sophia.qa@example.com",
+      "candidate_contact": "+1234567890",
+      "vacancy": "Senior QA Lead",
+      "keywords": "Selenium, PyTest, Python, POM"
+    },
+    "claim": {
+      "event": "Travel Allowance",
+      "currency": "United States Dollar",
+      "amount": "250.00",
+      "remarks": "Client onsite automation audit."
+    },
+    "performance": {
+      "review_title": "Annual Enterprise QA Performance Review",
+      "kpi": "Code Quality and Framework Maintainability"
+    }
+  },
+  "validations": {
+    "login_page_title": "OrangeHRM",
+    "dashboard_header": "Dashboard",
+    "invalid_credentials_msg": "Invalid credentials",
+    "required_field_msg": "Required",
+    "success_toast_msg": "Successfully Saved",
+    "update_toast_msg": "Successfully Updated",
+    "delete_toast_msg": "Successfully Deleted"
+  }
+}
